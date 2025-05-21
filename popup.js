@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("logout").addEventListener("click", logout);
 
-  document
-    .getElementById("open_transfer")
-    .addEventListener("click", openTransfer);
+  //   document
+  //     .getElementById("open_transfer")
+  //     .addEventListener("click", openTransfer);
 
   document.getElementById("goBack").addEventListener("click", goBack);
 

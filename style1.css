@@ -27,14 +27,14 @@ body {
 #heading {
     text-align: center;
     margin: 2em;
-    color: rgb(0, 255, 200);
+    color: #ffe600;
     font-size: 1.2em;
 
 }
 
 .header_network p {
-    border: 1px solid #00642f;
-    color: #00642f;
+    border: 1px solid #2b2811;
+    color: #2e2b12;
     font-weight: bold;
     padding: 0.5rem 1rem;
     display: flex;
@@ -61,7 +61,7 @@ body {
 
 .network-title {
     font-size: 1.3rem;
-    border: 1px solid rgb(0, 255, 200);
+    border: 1px solid #ffe600;
 }
 
 .network_item {
@@ -88,7 +88,7 @@ body {
 }
 
 .home_title {
-    color: rgb(0, 255, 200);
+    color: #ffe600;
     font-size: 1.2em;
     cursor: pointer;
 
@@ -132,7 +132,7 @@ body {
     text-align: center;
     padding: 2rem;
     display: none;
-    color: rgb(0, 255, 200);
+    color: #ffe600;
     text-align: center;
 }
 /* 
@@ -170,7 +170,7 @@ Form */
 .input-icon {
     height: 1.3em;
     width: 1.3em;
-    fill: rgb(0, 255, 200);
+    fill: #ffe600;
 }
 
 .input-field {
@@ -178,7 +178,7 @@ Form */
     border: none;
     outline: none;
     width: 100%;
-    color: rgb(0, 255, 200);
+    color: #ffe600;
 }
 
 
@@ -200,13 +200,13 @@ Form */
     border: none;
     outline: none;
     transition: 0.4s ease-in-out;
-    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    background-image: linear-gradient(163deg, #ffe600 0%, #3700ff 100%);
     color: rgb(0, 0, 0);
 }
 
 .button1:hover {
-    background-image: linear-gradient(163deg, #00642f 0%, #13034b 100%);
-    color: rgb(0, 255, 200);
+    background-image: linear-gradient(163deg, #bba600 0%, #13034b 100%);
+    color: #ffe600;
 }
 
 .button2 {
@@ -217,14 +217,14 @@ Form */
     border:none;
     outline: none;
     transition: 0.4s ease-in-out;
-    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    background-image: linear-gradient(163deg, #ffe600 0%, #3700ff 100%);
     color: rgb(0, 0, 0);
 }
 
 
 .button2:hover {
-    background-image: linear-gradient(163deg, #00642f 0%, #13034b 100%);
-    color: rgb(0, 255, 200);
+    background-image: linear-gradient(163deg, #bba600 0%, #13034b 100%);
+    color: #ffe600;
 }
 
 .button3 {
@@ -234,7 +234,7 @@ Form */
     border: none;
     outline: none;
     transition: ease-in-out;
-    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    background-image: linear-gradient(163deg, #ffe600 0%, #3700ff 100%);
     color: rgb(0, 0, 0);
 
 }
@@ -245,7 +245,7 @@ button3:hover{
 }
 
 .card {
-    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    background-image: linear-gradient(163deg, #ffe600 0%, #3700ff 100%);
     transition: all 0.3s;
 
 }
@@ -275,7 +275,7 @@ p {
 
 a {
     text-decoration: none;
-    color:rgb(0, 255, 200)(0, 255, 200);
+    color:#ffe600(0, 255, 200);
     display: none;
     
 }
@@ -419,7 +419,7 @@ textarea {
 
 .home_features_item > p {
     line-height: 0;
-    color: #00ff75;
+    color: #ffe600;
 }
 
 .home_tabs {
@@ -434,7 +434,7 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     grid-area: 2rem;
-    border-top: 1px solid #00ff75;
+    border-top: 1px solid #ffe600;
     padding: 1rem 0;
 }
 
@@ -442,7 +442,7 @@ textarea {
 .assets_item_img {
     width: 20px;
     height: 20px;
-    border: 1px solid #00ff75;
+    border: 1px solid #ffe600;
     border-radius: 0.5rem;
     padding: 0.5rem;
 }
@@ -480,7 +480,7 @@ textarea {
 .lists {
     display: grid;
     grid-template-columns: 0.1fr 5fr;
-    border-bottom: 1px solid #00ff75;
+    border-bottom: 1px solid #ffe600;
     align-items: center;
 }
 
