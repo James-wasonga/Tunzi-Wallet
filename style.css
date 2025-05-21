@@ -138,7 +138,7 @@ body {
 /* 
 Form */
 
-.transfer_from {
+.transfer_form {
     display: none;
 }
 
@@ -389,6 +389,7 @@ textarea {
     background-color: #171717;
     text-align: center;
     padding: 1rem 2rem;
+    display: none;
 
 }
 
