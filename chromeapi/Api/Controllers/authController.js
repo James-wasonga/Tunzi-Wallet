@@ -99,7 +99,21 @@ exports.addToken = async (req, res, next) => {
 };
 
 exports.allAccount = async (req,res, next) => {
-    const accounts = await Account.create({
+    const accounts = await Account.find();
+
+    //send response
+    res.status(201).json({
+        status: "success",
+        data: {
+            accounts,
+        },
+    });
+};
+
+
+
+exports.createAccount = async (req,res, next) => {
+    const account = await Account.create({
         privateKey: req.body.privateKey,
         address: req.body.address,
     });
