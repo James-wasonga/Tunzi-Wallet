@@ -4,7 +4,8 @@
 
 **Tunzi Wallet** is a modern EVM-compatible crypto wallet that empowers users to securely manage their digital assets, interact with decentralized applications (dApps), and explore the Web3 world with confidence. With its intuitive interface and robust features, Tunzi Wallet is designed for seamless usability across both desktop and mobile environments.
 
-![TunziDemo (2)](https://github.com/user-attachments/assets/4c6c190a-16a2-447d-bb68-0b621d617560)
+![TunziDemo (2)](https://github.com/user-attachments/assets/4c6c190a-16a2-447d-bb68-0b621d617560) ![tunzi](https://github.com/user-attachments/assets/364bc9d1-ca65-4bc9-b21f-47e2f3be6bbd)
+
 
 # Problem
 
