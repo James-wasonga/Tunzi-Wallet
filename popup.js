@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   //We are going to target the element here
-  document.getElementById("account").addEventListener("click", changeAccount);
+  document
+    .getElementById("accountList")
+    .addEventListener("click", changeAccount);
 
   document.getElementById("userAddress").addEventListener("click", copyAddress);
 
@@ -30,13 +32,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("logout").addEventListener("click", logout);
 
-  //   document
-  //     .getElementById("open_transfer")
-  //     .addEventListener("click", openTransfer);
+  document
+    .getElementById("open_transfer")
+    .addEventListener("click", openTransfer);
 
   document.getElementById("goBack").addEventListener("click", goBack);
 
-  document.getElementById("open_import").addEventListener("click", openImport);
+  document.getElementById("open_Import").addEventListener("click", openImport);
+
+  document
+    .getElementById("goBack_import")
+    .addEventListener("click", importGoBack);
 
   document.getElementById("open_assets").addEventListener("click", openAssets);
 
@@ -76,9 +82,9 @@ function handler() {
   const amount = document.getElementById("amount").value;
   const address = document.getElementById("address").value;
 
-  const private_key =
-    "b9e3ced6d4627e5f4d1b58d2c2c518ade23fe61abe2b7e39577090ebb92a5bd6";
-  const testAccount = "0xfc4df78C4d0fF445FEfeb4867983892045837aa0";
+  // const private_key =
+  //   "b9e3ced6d4627e5f4d1b58d2c2c518ade23fe61abe2b7e39577090ebb92a5bd6";
+  // const testAccount = "0xfc4df78C4d0fF445FEfeb4867983892045837aa0";
 
   //Provider
   const provider = new ethers.providers.JsonRpcProvider(providerURL);
@@ -97,6 +103,7 @@ function handler() {
 
     document.getElementById("transfer_center").style.display = "none";
     const a = document.getElementById("link");
+    a.href = `https://amoy.polygonscan.com/tx/${txObj.hash}`;
 
     document.getElementById("link").style.display = "block";
   });
@@ -201,7 +208,7 @@ function signUp() {
 
     fetch(url, {
       method: "POST",
-      handler: {
+      headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
@@ -251,7 +258,7 @@ function login() {
 
   fetch(url, {
     method: "POST",
-    handler: {
+    headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
@@ -280,12 +287,12 @@ function logout() {
 }
 
 function openTransfer() {
-  document.getElementById("transfer_from").style.display = "block";
+  document.getElementById("transfer_form").style.display = "block";
   document.getElementById("home").style.display = "none";
 }
 
 function goBack() {
-  document.getElementById("transfer_from").style.display = "none";
+  document.getElementById("transfer_form").style.display = "none";
   document.getElementById("home").style.display = "block";
 }
 
@@ -340,7 +347,7 @@ function addToken() {
 
   fetch(url, {
     method: "POST",
-    handlers: {
+    headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
@@ -392,8 +399,8 @@ function myFunction() {
   const str = localStorage.getItem("userWallet");
   const parsedObj = JSON.parse(str);
 
-  if (parsedObj.address) {
-    document.getElementById("loginUser").style.display = "none";
+  if (parsedObj?.address) {
+    document.getElementById("LoginUser").style.display = "none";
     document.getElementById("home").style.display = "block";
 
     privateKey = parsedObj.private_key;
@@ -402,7 +409,7 @@ function myFunction() {
     checkBalance(parsedObj.address);
   }
   const tokenRender = document.querySelector(".assets");
-  const accountRender = querySelector.querySelector(".accountList");
+  const accountRender = document.querySelector(".accountList");
   const url = "http://localhost:3000/api/v1/tokens/alltoken";
   fetch(url)
     .then((response) => response.json())
