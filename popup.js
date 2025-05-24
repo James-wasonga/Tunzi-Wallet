@@ -194,7 +194,7 @@ function signUp() {
     console.log(wallet);
 
     //API CAL
-    const url = "https://localhost:3000/api/v1/user/signup";
+    const url = "http://localhost:3000/api/v1/user/signup";
 
     const data = {
       name: name,
@@ -250,14 +250,14 @@ function login() {
   const password = document.getElementById("login_password").value;
 
   //API CALL
-  const url = "https://localhost:3000/api/v1/user/login";
+  const url = "http://localhost:3000/api/v1/user/login";
   const data = {
     email: email,
     password: password,
   };
 
   fetch(url, {
-    method: "POST",
+    method: "GET",
     headers: {
       "Content-Type": "application/json",
     },
