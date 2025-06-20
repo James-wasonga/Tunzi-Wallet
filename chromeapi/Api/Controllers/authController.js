@@ -65,7 +65,7 @@ exports.login = async (req, res, next) => {
             message: "Incorrect email or password",
         });
     }
-    //send tokent o client when everything is ok
+    //send token to client when everything is ok
     createSendToken(user, 200, req, res);
 }
 
@@ -102,7 +102,7 @@ exports.allAccount = async (req,res, next) => {
     const accounts = await Account.find();
 
     //send response
-    res.status(201).json({
+    res.status(200).json({
         status: "success",
         data: {
             accounts,
