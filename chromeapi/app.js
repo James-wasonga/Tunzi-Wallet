@@ -17,4 +17,4 @@ app.use("/api/v1/user", userRouter);
 app.use("/api/v1/tokens", tokenRouter);
 app.use("/api/v1/account", accountRouter);
 
-module.exports =app;
+module.exports = app;
