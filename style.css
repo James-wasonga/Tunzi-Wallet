@@ -37,6 +37,7 @@ body {
     color: #00642f;
     font-weight: bold;
     padding: 0.5rem 1rem;
+    border-radius: 1rem;        
     display: flex;
     align-items: center;
     justify-content: space-between;
